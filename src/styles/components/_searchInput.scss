@@ -1,0 +1,17 @@
+.input {
+  background-color: rgb(238, 238, 238);
+  color: #333;
+  height: 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 2rem 0rem 2rem 1.5rem;
+  width: 100%;
+  grid-area: input;
+  border: none;
+  border-radius: 0.5rem;
+  outline: none;
+
+  &::placeholder {
+    opacity: 0.7;
+  }
+}
