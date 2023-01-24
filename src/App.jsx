@@ -5,9 +5,13 @@ import Card from "./components/Card";
 import "./styles/app.scss";
 
 function App() {
+  const selectSearchOptionHandler = (searchData) => {
+    console.log(searchData);
+  };
+
   return (
     <div className="App">
-      <Search />
+      <Search selectSearchOption={selectSearchOptionHandler} />
       <Card className="currentForecast"></Card>
       <Card className="todaysForecast"></Card>
       <Card className="airConditions"></Card>
