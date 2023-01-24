@@ -21,7 +21,7 @@
     font-size: 2.5rem;
   }
 
-  &__rain-chance {
+  &__climate-description {
     font-size: 1rem;
     color: #999;
     font-weight: 400;
@@ -35,4 +35,9 @@
 .weather-image {
   display: flex;
   align-items: center;
+
+  img {
+    height: 150px;
+    color: black;
+  }
 }
