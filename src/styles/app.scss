@@ -1,7 +1,9 @@
 @import "./base/base";
+@import "./base/typography";
 @import "./layout/grid";
 @import "./components/searchInput";
-@import "./components/airConditions";
-@import "./components/currentForecast";
-@import "./components/sevenDaysForecast";
-@import "./components/todaysForecast";
+@import "./components/airConditionsCard";
+@import "./components/currentForecastCard";
+@import "./components/sevenDaysForecastCard";
+@import "./components/todaysForecastCard";
+@import "./components/currentWeather";
