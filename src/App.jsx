@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Search from "./components/Search";
 import Card from "./components/Card";
 import CurrentWeather from "./components/CurrentWeather";
+import AirConditions from "./components/AirConditions";
 import "./styles/app.scss";
 import { REACT_APP_WEATHER_URL } from "./api";
 
@@ -44,7 +45,13 @@ function App() {
           data={currentWeather}
         ></Card>
       )}
-      <Card className="todaysForecast" data={forecast}></Card>
+      {forecast && (
+        <Card
+          className="todaysForecast"
+          component={AirConditions}
+          data={forecast}
+        ></Card>
+      )}
       <Card className="airConditions"></Card>
       <Card className="sevenDaysForecast"></Card>
     </div>
