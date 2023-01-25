@@ -4,6 +4,7 @@ import Search from "./components/Search";
 import Card from "./components/Card";
 import CurrentWeather from "./components/CurrentWeather";
 import AirConditions from "./components/AirConditions";
+import TodaysForecast from "./components/TodaysForecast";
 import "./styles/app.scss";
 import { REACT_APP_WEATHER_URL } from "./api";
 
@@ -45,7 +46,13 @@ function App() {
           data={currentWeather}
         ></Card>
       )}
-      {forecast && <Card className="todaysForecast"></Card>}
+      {forecast && (
+        <Card
+          className="todaysForecast"
+          component={TodaysForecast}
+          data={forecast}
+        ></Card>
+      )}
       {currentWeather && (
         <Card
           className="airConditions"
