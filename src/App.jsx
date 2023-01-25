@@ -45,14 +45,14 @@ function App() {
           data={currentWeather}
         ></Card>
       )}
-      {forecast && (
+      {forecast && <Card className="todaysForecast"></Card>}
+      {currentWeather && (
         <Card
-          className="todaysForecast"
+          className="airConditions"
           component={AirConditions}
-          data={forecast}
+          data={currentWeather}
         ></Card>
       )}
-      <Card className="airConditions"></Card>
       <Card className="sevenDaysForecast"></Card>
     </div>
   );
