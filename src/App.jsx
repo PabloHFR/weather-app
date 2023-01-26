@@ -5,6 +5,7 @@ import Card from "./components/Card";
 import CurrentWeather from "./components/CurrentWeather";
 import AirConditions from "./components/AirConditions";
 import TodaysForecast from "./components/TodaysForecast";
+import FiveDaysForecast from "./components/FiveDaysForecast";
 import "./styles/app.scss";
 import { REACT_APP_WEATHER_URL } from "./api";
 
@@ -60,7 +61,13 @@ function App() {
           data={currentWeather}
         ></Card>
       )}
-      <Card className="sevenDaysForecast"></Card>
+      {forecast && (
+        <Card
+          className="fiveDaysForecast"
+          component={FiveDaysForecast}
+          data={forecast}
+        ></Card>
+      )}
     </div>
   );
 }
