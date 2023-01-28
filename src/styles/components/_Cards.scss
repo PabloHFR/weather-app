@@ -1,0 +1,26 @@
+.currentForecast,
+.airConditions,
+.fiveDaysForecast,
+.todaysForecast {
+  background-color: rgb(238, 238, 238);
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.currentForecast {
+  background-color: white;
+  grid-area: current;
+}
+
+.airConditions {
+  grid-area: airConditions;
+}
+
+.fiveDaysForecast {
+  grid-area: sevenDays;
+}
+
+.todaysForecast {
+  grid-area: todaysForecast;
+}

@@ -22,6 +22,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 0.5rem;
 
   h4 {
     font-size: 1.1rem;
@@ -31,7 +32,6 @@
   .description-container {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
 
     p {
       color: #333;
@@ -48,5 +48,61 @@
     font-size: 2rem;
     color: #333;
     font-weight: 700;
+  }
+}
+
+@media (max-width: 1320px) {
+  .days {
+    h4 {
+      font-size: 1rem;
+    }
+  }
+  .days {
+    .temperature {
+      font-size: 1.7rem;
+    }
+
+    .description-container {
+      img {
+        height: 5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 764px) {
+  .five-days-container {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .five-days-forecast {
+    padding: 1.5rem 1rem;
+
+    h3 {
+      font-size: 0.75rem;
+    }
+  }
+
+  .days {
+    h4 {
+      font-size: 0.7rem;
+    }
+  }
+
+  .days {
+    .temperature {
+      font-size: 1.2rem;
+    }
+
+    .description-container {
+      p {
+        font-size: 0.7rem;
+      }
+      img {
+        height: 3rem;
+      }
+    }
   }
 }
