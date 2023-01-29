@@ -7,7 +7,7 @@
 
   h3 {
     font-size: 1rem;
-    color: #888;
+    color: $color-gray-light;
     text-transform: uppercase;
   }
 }
@@ -26,7 +26,7 @@
 
   h4 {
     font-size: 1.1rem;
-    color: #999;
+    color: $color-gray-lighter;
   }
 
   .description-container {
@@ -34,7 +34,7 @@
     align-items: center;
 
     p {
-      color: #333;
+      color: $color-gray-dark;
       font-weight: 700;
       font-size: 1.1rem;
     }
@@ -46,7 +46,7 @@
 
   .temperature {
     font-size: 2rem;
-    color: #333;
+    color: $color-gray-dark;
     font-weight: 700;
   }
 }

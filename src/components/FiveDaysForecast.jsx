@@ -14,6 +14,7 @@ const FiveDayForecast = ({ data }) => {
     ];
     return days[date.getUTCDay()];
   }
+
   return (
     <div className="five-days-forecast">
       <h3>5-Day Forecast</h3>

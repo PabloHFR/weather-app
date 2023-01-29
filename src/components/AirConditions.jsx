@@ -1,8 +1,6 @@
 import React from "react";
 
 const AirConditions = ({ data }) => {
-  console.log(data);
-
   return (
     <div className="air-conditions">
       <h3>Air Conditions</h3>
