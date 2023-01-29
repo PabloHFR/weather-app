@@ -1,8 +1,6 @@
 import React from "react";
 
 const TodaysForecast = ({ data }) => {
-  console.log(data);
-  console.log(data.list[0].dt_txt.slice(11, 16));
   return (
     <div className="todays-forecast-container">
       <h3>Today's Forecast</h3>

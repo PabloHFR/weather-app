@@ -2,14 +2,14 @@
 .airConditions,
 .fiveDaysForecast,
 .todaysForecast {
-  background-color: rgb(238, 238, 238);
+  background-color: $color-white-secondary;
   height: 100%;
   width: 100%;
   border-radius: 1rem;
 }
 
 .currentForecast {
-  background-color: white;
+  background-color: $color-white;
   grid-area: current;
 }
 

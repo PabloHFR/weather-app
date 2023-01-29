@@ -6,7 +6,7 @@
 
   h3 {
     font-size: 1rem;
-    color: #888;
+    color: $color-gray-light;
     text-transform: uppercase;
   }
 }
@@ -31,11 +31,11 @@
     min-width: 140px;
 
     font-size: 1.5rem;
-    color: #999;
+    color: $color-gray-lighter;
   }
 
   p {
-    color: #333;
+    color: $color-gray-dark;
     font-size: 2rem;
     font-weight: 700;
     padding-left: 0.75rem;
